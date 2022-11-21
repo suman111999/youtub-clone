@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top:0;
+    z-index: 50;
+    background-color: white;
+}
+.header__logo{
+    height: 25px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.header__searchbar{
+    width: 40%;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+
+.header__searchbar>input{
+    /* width:100% is same as flex:1 */
+    flex:1;
+    border: none;
+    border-radius: 15px;
+}
+
+.header_searchButton{
+    width:15% !important;
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+    color: gray;/*color of search icon as it is material Ui icon so work like font/text*/
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
